@@ -1,0 +1,20 @@
+[
+    {
+        "name": "Slade Wilson",
+        "address": "34 Barnacle Road, Pretoria, 66606",
+        "phone": "(011) 378-2783",
+        "photoUrl": "/profiles/rando_white_3.jpg"
+    },
+    {
+        "name": "Emma Watson",
+        "address": "43 Treble Drive, Tropika, 6567",
+        "phone": "(012) 432-4583",
+        "photoUrl": "/profiles/rando_white_4.jpg"
+    },
+    {
+        "name": "Max Tshabalala",
+        "address": "62 4th Avenue, Melville, 2001",
+        "phone": "(061) 732-5783",
+        "photoUrl": "/profiles/rando_Asia_1.png"
+    }
+]

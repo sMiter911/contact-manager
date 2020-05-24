@@ -1,0 +1,44 @@
+[
+    {
+        "name": "Wade Wilson",
+        "address": "43 Dernby Drive, Topeka, 66606",
+        "phone": "(011) 432-6783",
+        "photoUrl": "/profiles/rando_white_1.png"
+    },
+    {
+        "name": "Sheila Estoban",
+        "address": "56 Corlette Drive, Johanesburg, 2001",
+        "phone": "(072) 234-4876",
+        "photoUrl": "/profiles/rando_white_2.png"
+    },
+    {
+        "name": "Zama Khumalo",
+        "address": "8 Everret Avenue, Midrand, 3012",
+        "phone": "(083) 456-9872",
+        "photoUrl": "/profiles/rando_black_4.png"
+    },
+    {
+        "name": "Daniel Mavenson",
+        "address": "45 Nyoba Street, Alex, 5550",
+        "phone": "(011) 451-2900",
+        "photoUrl": "/profiles/rando_black_2.png"
+    },
+    {
+        "name": "Penny Khumalo",
+        "address": "41 Maluleka Street, Mamelodi, 5550",
+        "phone": "(011) 321-2900",
+        "photoUrl": "/profiles/rando_black_1.png"
+    },
+    {
+        "name": "Jabu Simelane",
+        "address": "2nd Street, Melville, 2001",
+        "phone": "(011) 321-4567",
+        "photoUrl": "/profiles/rando_black_3.png"
+    },
+    {
+        "name": "Maleven",
+        "address": "Unknown",
+        "phone": "Unknown",
+        "photoUrl": "/profiles/Maleven.jpg"
+    }
+]

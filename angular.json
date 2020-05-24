@@ -11,24 +11,26 @@
         }
       },
       "root": "",
-      "sourceRoot": "src",
+      "sourceRoot": "src/client",
       "prefix": "app",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/angular-auth-api",
-            "index": "src/index.html",
-            "main": "src/main.ts",
-            "polyfills": "src/polyfills.ts",
+            "outputPath": "src/server/public",
+            "index": "src/client/index.html",
+            "main": "src/client/main.ts",
+            "polyfills": "src/client/polyfills.ts",
             "tsConfig": "tsconfig.app.json",
             "aot": true,
             "assets": [
-              "src/favicon.ico",
-              "src/assets"
+              "src/client/favicon.ico",
+              "src/client/assets"
             ],
             "styles": [
-              "src/styles.scss"
+              "src/client/styles.scss",
+              "src/client/assets/semantic.min.css",
+              "src/client/assets/semantic.grid.min.css"
             ],
             "scripts": []
           },
@@ -36,8 +38,8 @@
             "production": {
               "fileReplacements": [
                 {
-                  "replace": "src/environments/environment.ts",
-                  "with": "src/environments/environment.prod.ts"
+                  "replace": "src/client/environments/environment.ts",
+                  "with": "src/client/environments/environment.prod.ts"
                 }
               ],
               "optimization": true,
@@ -66,7 +68,8 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "angular-auth-api:build"
+            "browserTarget": "angular-auth-api:build",
+            "proxyConfig": "proxy.conf.json"
           },
           "configurations": {
             "production": {
@@ -83,16 +86,16 @@
         "test": {
           "builder": "@angular-devkit/build-angular:karma",
           "options": {
-            "main": "src/test.ts",
-            "polyfills": "src/polyfills.ts",
+            "main": "src/client/test.ts",
+            "polyfills": "src/client/polyfills.ts",
             "tsConfig": "tsconfig.spec.json",
             "karmaConfig": "karma.conf.js",
             "assets": [
-              "src/favicon.ico",
-              "src/assets"
+              "src/client/favicon.ico",
+              "src/client/assets"
             ],
             "styles": [
-              "src/styles.scss"
+              "src/client/styles.scss"
             ],
             "scripts": []
           }
