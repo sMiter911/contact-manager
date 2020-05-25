@@ -40,7 +40,7 @@ export class ApiService {
 
   constructor(private http: HttpClient) { }
 
-  getContact(): Observable<Contact> {
+  getContacts(): Observable<Contact> {
     return this.http.get<Contact>(`${environment.apiUrl}/contacts`, this.httpOptions)
     .pipe(
       retry(2),
@@ -55,6 +55,6 @@ export class ApiService {
       catchError(this.handleError)
     );
   }
-
+  
   // Delete and Put to be added later
 }

@@ -13,7 +13,7 @@ export class ContactListComponent implements OnInit {
   constructor(public apiService: ApiService) { }
 
   ngOnInit(): void {
-    this.apiService.getContact().subscribe( data =>
+    this.apiService.getContacts().subscribe( data =>
       this.contacts = data);
     console.log(this.contacts);
   }

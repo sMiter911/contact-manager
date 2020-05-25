@@ -1,5 +1,6 @@
 import { Component, OnInit, Input, HostBinding } from '@angular/core';
 import { Contact } from '../shared/contact.model';
+import { ApiService } from '../shared/api.service';
 
 @Component({
   selector: 'app-contact',
@@ -12,9 +13,8 @@ export class ContactComponent implements OnInit {
   @Input() contact: Contact;
   @HostBinding('class') columnClass = 'four wide column';
 
-  constructor() { }
+  constructor(private api: ApiService) { }
 
   ngOnInit(): void {
   }
-
 }

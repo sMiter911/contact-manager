@@ -24,10 +24,10 @@ function seedCollection(collectionName, initialRecords) {
 
             // intialize records
             initialRecords.forEach((item) => {
-                if (item.passsword) {
-                    item.passsword = bcrypt.hashSync(item, 10);
+                if (item.password) {
+                  item.password = bcrypt.hashSync(item.password, 10);
                 }
-            });
+              });
 
             // enter records into spcified collection
             collection.insertMany(initialRecords, (err, result) => {
