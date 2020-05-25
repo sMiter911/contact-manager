@@ -1,27 +1,15 @@
-# AngularAuthApi
+Angular + Node Contact Manager
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.0.
 
-## Development server
+Note Always make sure you make a copy of .env.sample, rename it to .env, and add in the necessary environemtn variables for both the JWT secret and the MongoDB connection string.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Build tasks
+Different npm scripts for your workflow:
 
-## Code scaffolding
+npm start: this will run a production build of the Angular app, and place the bundles in server/public directory, and then will start the Node + Express app. This is typically what you would want to do if deploying the applicaiton.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+npm run watch: this will utilize webpack-dev-server to run the Angular app in a live development server, watching for any changes, and also start the Express app at port 3000. 
 
-## Build
+Since the app is running on port 4200, we supply a proxy config file to proxy all requests to /api to localhost:3000/api. Making changes to your code will live reload both the client and the server. Use this for development.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+npm run sample: this will seed your database with initial contacts and users.

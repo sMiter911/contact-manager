@@ -1,0 +1,13 @@
+{
+    "sqltools.connections": [
+        {
+            "database": "Sysinfo.API.Dev",
+            "dialect": "PostgreSQL",
+            "name": "Postgres Instance",
+            "password": "sMiter911",
+            "port": 5432,
+            "server": "localhost",
+            "username": "Wandumuzi.Mathunjwa"
+        }
+    ]
+}
